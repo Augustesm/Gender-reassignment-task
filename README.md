@@ -1,2 +1,5 @@
 # Gender-reassignment-task
-Created a neural network to reconstruct the missing gender value of the 5th patient.
+
+Created a neural network to reconstruct the missing gender value of the 5th patient
+
+In this project, I implemented a simple fully connected neural network from scratch using Python, NumPy, and Pandas to predict the missing gender value of a patient based on height and weight measurements. I manually built all core components of the model, including the feedforward pass, sigmoid activation function, backpropagation algorithm, loss calculation, and weight updates. The dataset was normalized using min–max scaling, and the network was trained with multiple combinations of learning rates and epoch counts to compare performance. No machine learning libraries such as TensorFlow or PyTorch were used—every step of the neural network was programmed manually to clearly demonstrate how gradient descent and backpropagation work at a low level. The final model generates a probability-based prediction for the fifth patient's gender and provides a results table summarizing all training configurations.
