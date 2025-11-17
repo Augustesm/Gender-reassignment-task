@@ -1,5 +1,52 @@
-# Gender-reassignment-task
+# Gender Prediction Neural Network
 
-Created a neural network to reconstruct the missing gender value of the 5th patient
+**Gender Prediction Neural Network** is a Python-based machine learning project that demonstrates how to build, train, and evaluate a simple neural network **from scratch**, without using high-level libraries such as TensorFlow or PyTorch. The model predicts the missing gender value of the 5th patient using height and weight as input features.
 
-In this project, I implemented a simple fully connected neural network from scratch using Python, NumPy, and Pandas to predict the missing gender value of a patient based on height and weight measurements. I manually built all core components of the model, including the feedforward pass, sigmoid activation function, backpropagation algorithm, loss calculation, and weight updates. The dataset was normalized using min–max scaling, and the network was trained with multiple combinations of learning rates and epoch counts to compare performance. No machine learning libraries such as TensorFlow or PyTorch were used—every step of the neural network was programmed manually to clearly demonstrate how gradient descent and backpropagation work at a low level. The final model generates a probability-based prediction for the fifth patient's gender and provides a results table summarizing all training configurations.
+## Key Features
+
+* 🔢 **Manually implemented neural network**
+* 🧠 **Feedforward computation using sigmoid activation**
+* 🔄 **Backpropagation algorithm coded from scratch**
+* 📉 **Mean squared error (MSE) loss function**
+* 🧮 **Gradient descent weight updates**
+* 📊 **Training evaluation with multiple hyperparameter configurations**
+* 📈 **Prediction of the 5th patient's gender**
+* 🔧 **Min–max normalization for feature scaling**
+* 🗂️ **Clean comparison table of learning rates and epoch counts**
+
+## Technologies Used
+
+* **Python** — core programming language
+* **NumPy** — numerical operations, matrix math, activation functions
+* **Pandas** — data loading, preprocessing, tabular results
+* **Custom code** — full neural network architecture, forward pass, backpropagation, and gradient updates implemented manually
+
+## Features in Detail
+
+### Neural Network Architecture
+
+* 2 input features: **height** and **weight**
+* 1 hidden layer with **two neurons**
+* 1 output neuron representing predicted gender probability
+* All activation functions use **sigmoid**
+* All biases are set to **1**
+
+### Training & Evaluation
+
+* Backpropagation implemented manually
+* Multiple experiments performed with different:
+
+  * Learning rates
+  * Epoch counts
+* A results table summarizes:
+
+  * Final loss
+  * Prediction for Patient 5
+  * Hyperparameter configuration
+
+### Data Processing
+
+* Dataset constructed from Table 2 (16 patients)
+* Gender value of Patient 5 set to unknown
+* Features normalized using **min–max scaling**
+* The network is trained on the remaining patients, excluding the 5th entry
